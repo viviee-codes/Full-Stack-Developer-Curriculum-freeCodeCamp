@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Survey Form</title>
+  </head>
+
+  <body>
+    <h1 id="title">Code Coffee Shop Survey Form</h1>
+    <p id="description">
+      Please, fill out this form and help us improve our coffee shop.
+    </p>
+    <form id="survey-form">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <br />
+        <label for="name" id="name-label">Full Name:</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          placeholder="Jane Doe"
+          required
+        />
+        <br />
+        <br />
+        <label for="email" id="email-label">Email address:</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="example@email.com"
+          required
+        />
+        <br />
+        <br />
+        <label for="number" id="number-label">Age (optional):</label>
+        <input
+          type="number"
+          name="number"
+          id="number"
+          placeholder="30"
+          min="18"
+          max="100"
+        />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>How was your overall experience in our coffee shop?</legend>
+        <select id="dropdown">
+          <option value="excellent" selected>Excellent</option>
+          <option value="great">Great</option>
+          <option value="good">Good</option>
+          <option value="okay">Okay</option>
+          <option value="bad">Bad</option>
+          <option value="terrible">Terrible</option>
+        </select>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Have you been to our coffee shop before?</legend>
+        <label for="yes-choice">Yes</label>
+        <input
+          type="radio"
+          name="choice"
+          id="yes-choice"
+          value="yes-choice"
+          checked
+        />
+        <label for="no-choice">No</label>
+        <input type="radio" name="choice" id="no-choice" value="no-choice" />
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>What was your favourite beverage?</legend>
+        <input type="checkbox" name="beverage" id="espresso" value="espresso" />
+        <label for="espresso">Espresso</label>
+        <input type="checkbox" name="beverage" id="mocha" value="mocha" />
+        <label for="mocha">Mocha</label>
+        <input type="checkbox" name="beverage" id="latte" value="latte" />
+        <label for="latte">Latte</label>
+        <input
+          type="checkbox"
+          name="beverage"
+          id="cappuccino"
+          value="cappuccino"
+        />
+        <label for="cappuccino">Cappuccino</label>
+        <input
+          type="checkbox"
+          name="beverage"
+          id="americano"
+          value="americano"
+        />
+        <label for="americano">Americano</label>
+        <input
+          type="checkbox"
+          name="beverage"
+          id="iced-latte"
+          value="iced-latte"
+        />
+        <label for="iced-latte">Iced Latte</label>
+      </fieldset>
+      <br />
+      <fieldset>
+        <legend>Any other comments or suggestions?</legend>
+        <textarea
+          cols="50"
+          rows="10"
+          placeholder="your comment here..."
+        ></textarea>
+      </fieldset>
+      <br />
+      <button type="submit" id="submit">Submit</button>
+    </form>
+  </body>
+</html>
